@@ -11,6 +11,17 @@
 		function toggleActive() {
 			document.getElementById('grid').classList.toggle('active');
 			document.getElementById('link-container').classList.toggle('active');
+			document.getElementById('infos').classList.toggle('active');
+			document.getElementById('menu-icon').classList.toggle('active');
+			reset_animation();
+			document.getElementById('menu-icon').classList.toggle('inactive');
+		}
+
+		function reset_animation() {
+		 	var el = document.getElementById('menu-icon');
+		 	el.style.animation = 'none';
+		 	el.offsetHeight;
+		 	el.style.animation = null; 
 		}
 	</script>
 </head>
@@ -19,15 +30,26 @@
 	<div class="grid" id="grid">
 
 		<header>
-			<img src="./res/menu.png" onclick="toggleActive();" class="menu-icon">			
+			<img onclick="toggleActive();" class="menu-icon active" id="menu-icon">
 			<h1>E-Portfolio Noah</h1>
 		</header>
 
 		<nav>
+
+			<div class="footer-or-something active" id="infos">
+				
+				<span>2022-05-24</span>
+				<span>V 0.1.0</span>
+				<span>Noah Streller</span>
+				<span>Published</span>
+
+			</div>
+
 			
 			<div class="link-container" id="link-container">
 				
 				<h2>Menu</h2>
+				<a href="../">Home</a>
 				<a href="./organisation">Organisation</a>
 				<a href="./projekt">Projekt</a>
 				<a href="./iperka">IPERKA</a>
