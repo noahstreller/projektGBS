@@ -45,10 +45,15 @@ h3 {
 
 
 @media (max-width: 1000px){
+
+	section * {
+		font-size: 90%;
+	}
+
 	.grid {
 
 		display: grid;
-		grid-template: 12vh 88vh / 80vw 1fr;
+		grid-template: 12vh 88vh / 100vw 0fr;
 
 	}
 
@@ -82,6 +87,12 @@ h3 {
 	.link-container h2 {
 
 		font-size: 305%;
+
+	}
+
+	.footer-or-something {
+
+		display: none !important;
 
 	}
 }
@@ -228,9 +239,20 @@ section {
 
 }
 
-section:last-child {
+#projektantrag-img {
 
-	border-bottom: none;
+	width: 90%;
+	cursor: pointer;
+
+}
+
+ul * {
+	list-style-type: circle;
+}
+
+chapter {
+
+	border-bottom: solid white 3px;
 
 }
 
