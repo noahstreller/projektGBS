@@ -239,6 +239,22 @@ section {
 
 }
 
+section:last-child {
+
+	border-bottom: solid white 4px;
+	margin-bottom: 5vh;
+	padding-bottom: 5vh;
+
+}
+
+chapter:last-child section:last-child {
+
+	border-bottom: none;
+	margin-bottom: 5vh;
+	padding-bottom: 0;
+
+}
+
 #projektantrag-img {
 
 	width: 90%;
@@ -252,7 +268,7 @@ ul * {
 
 chapter {
 
-	border-bottom: solid white 3px;
+	border-bottom: solid white 3px;	
 
 }
 
