@@ -212,6 +212,30 @@ td:last-child {
 
 }
 
+@media (max-width: 500px){
+	td:first-child {
+		width: 23vw;
+	}
+}
+
+@media (min-width: 501px){
+	td:first-child {
+		max-width: 25vw;
+	}
+}
+
+
+.border-below tr:first-child {
+
+	border-bottom: solid 1px;
+
+}
+
+.border-below td {
+
+	border-right: none;
+
+}
 
 content {
 
@@ -241,7 +265,7 @@ section {
 
 section:last-child {
 
-	border-bottom: solid white 4px;
+	border-bottom: solid white 2px;
 	margin-bottom: 5vh;
 	padding-bottom: 5vh;
 
@@ -255,7 +279,12 @@ chapter:last-child section:last-child {
 
 }
 
-#projektantrag-img {
+#projektantrag-img, 
+#gantt-img,
+#notizen-img-1,
+#notizen-img-2,
+#infostruktur-img
+{
 
 	width: 90%;
 	cursor: pointer;
@@ -264,12 +293,6 @@ chapter:last-child section:last-child {
 
 ul * {
 	list-style-type: circle;
-}
-
-chapter {
-
-	border-bottom: solid white 3px;	
-
 }
 
 
@@ -355,8 +378,9 @@ nav {
 
 .fullwidth {
 
-	width: 100%;
-
+	width: 95%;
+	max-width: 95%;
+	overflow-x: auto;
 }
 
 #imgorg1 {
@@ -365,7 +389,9 @@ nav {
 
 }
 
-
+.simplefade, h1 {
+	animation: simplefade 1.5s;
+}
 
 
 
@@ -386,6 +412,11 @@ nav {
 }
 
 
+@keyframes simplefade {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
 
 ::-webkit-scrollbar {
 
@@ -399,8 +430,8 @@ nav {
 ::-webkit-scrollbar-thumb {
 
 	border-radius: 30px;
-	background: #fff4;
+	background: #fff8;
 
 }
 
-::-webkit-scrollbar-thumb:hover {background: #555;}
+::-webkit-scrollbar-thumb:hover {background: #fff;}

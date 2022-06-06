@@ -1,54 +1,347 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>E-Portfolio Noah</title>
-	<link rel="stylesheet" type="text/css" href="../stylesheets/universal.css">
-	<link rel="stylesheet" type="text/css" href="../stylesheets/index.css">
 
-	<script type="text/javascript">
-		function toggleActive() {
-			document.getElementById('grid').classList.toggle('active');
-			document.getElementById('link-container').classList.toggle('active');
-		}
-	</script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>E-Portfolio Noah</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/universal.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/index.css">
+
+    <script type="text/javascript">
+        function toggleActive() {
+            document.getElementById('grid').classList.toggle('active');
+            document.getElementById('link-container').classList.toggle('active');
+            document.getElementById('infos').classList.toggle('active');
+            document.getElementById('menu-icon').classList.toggle('active');
+            reset_animation();
+            document.getElementById('menu-icon').classList.toggle('inactive');
+        }
+
+        function reset_animation() {
+            var el = document.getElementById('menu-icon');
+            el.style.animation = 'none';
+            el.offsetHeight;
+            el.style.animation = null;
+        }
+    </script>
 </head>
+
 <body>
 
-	<div class="grid" id="grid">
+    <div class="grid" id="grid">
 
-		<header>
-			<img src="../res/menu.png" onclick="toggleActive();" class="menu-icon">			
-			<h1>E-Portfolio Noah</h1>
-		</header>
+        <header>
+            <img onclick="toggleActive();" class="menu-icon active" id="menu-icon">
+            <h1>Projekt</h1>
+        </header>
 
-		<nav>
-			
-			<div class="link-container" id="link-container">
-				
-				<h2>Menu</h2>
-				<a href="../">Home</a>
-				<a href="../organisation">Organisation</a>
-				<a href="../iperka">IPERKA</a>
-				<a href="../infobeschaffung">Informationsbeschaffung</a>
-				<a href="../planung">Planung</a>
-				<a href="../vortrag">Vortrag</a>
+        <nav>
 
-			</div>
+            <div class="footer-or-something active" id="infos">
 
-		</nav>
+                <span>2022-05-24</span>
+                <span>V 0.1.0</span>
+                <span>Noah Streller</span>
+                <span>Published</span>
 
-		<content>
-			
-			
+            </div>
 
 
-		</content>
+            <div class="link-container" id="link-container">
 
-				
+                <h2>Menu</h2>
+                <a href="../">Home</a>
+                <a href="../organisation">Organisation</a>
+                <a href="../projekt">Projekt</a>
+                <a href="../iperka">IPERKA</a>
+                <a href="../infobeschaffung">Informationsbeschaffung</a>
+                <a href="../planung">Planung</a>
+                <a href="../vortrag">Vortrag</a>
 
-	</div>
+            </div>
+
+        </nav>
+
+        <content>
+
+            <div class="scrollwrapper">
+
+                <chapter>
+
+                    <h2>Aufgaben und Aufträge in Ihrem Lehrbetrieb</h2>
+
+                    <section>
+
+                        <h3>Aufgabe 1</h3>
+
+                        <table>
+                            <tr>
+                                <td>Aufträge</td>
+                                <td>
+                                    <ul>
+                                        <li>Bestellungsautomat für ein Restaurant (Java)</li>
+                                        <li>Katalog für diverse Produkte (MS PowerApps)</li>
+                                        <li>Homepage für ein Zeichenprogramm (HTML, CSS)</li>
+                                        <li>Homepage für eine Bäckerei (PHP, CSS)</li>
+                                        <li>Stageverwaltungswebsite für Raiffeisen Schweiz (ReactJS)</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </section>
+
+
+                    <section>
+
+                        <h3>Aufgabe 2</h3>
+                        <table>
+                            <tr>
+                                <td>Beschreibung Automat</td>
+                                <td>Das Ziel war es, mit der objektorientierten Programmierung ein Java-Programm zu schreiben. Wir planten das gesamte Projekt von Grund auf. <br>
+                                    Mit JavaFX haben wir für das Programm ein vollständiges GUI erstellt, dass man eine Bestellung abgeben konnte.<br>
+                                    Alle Projektphasen wurden ausgeführt.</td>
+                            </tr>
+
+                            <tr>
+                                <td>Beschreibung Katalog</td>
+                                <td>Für die alten Laptops und andere elektronische Produkte sollte ein Verkaufskatalog erstellt werden. Wir gingen dieses Projekt mit MS PowerApps an, und wieder wurden alle Projektphasen ausgeführt.</td>
+                            </tr>
+
+                            <tr>
+                                <td>Beschreibung Zeichenprogramms-Website</td>
+                                <td>Ich erstellte für ein fiktives Zeichenprogramm eine Homepage. Das Ziel war, eine Website mittels HTML und CSS zu kreiren. Allerdings musste ich für diesen Auftrag nur die Phase Realisieren durchführen, da der Rest vorgegeben war.</td>
+                            </tr>
+
+                            <tr>
+                                <td>Beschreibung Bäckerei-Website</td>
+                                <td>Wir mussten für das Üben und Anwenden von der Programmiersprache PHP eine weitere Website bauen. Ich wählte als Motiv eine Bäckerei mit verschiedenen Produkten. Auf der Website baute ich auch ein "Admin-Panel" ein, wo die Buchhaltung der Bäckerei geführt werden konnte.</td>
+                            </tr>
+
+                            <tr>
+                                <td>Beschreibung Stageverwaltungswebsite</td>
+                                <td>Für die Nachwuchsabteilung der Raiffeisen Schweiz sollten wir eine Web-Applikation erstellen, mit welcher man Stagen für Trainees und Hochschulabsolventen erstellen kann. Dieses Projekt läuft in einem grösserem Umfang, wir haben einige Monate dafür Zeit bekommen. Wir mussten auch alle Phasen durchführen für dieses Projekt.</td>
+                            </tr>
+                        </table>
+
+
+                    </section>
+
+
+                    <section>
+
+                        <h3>Aufgabe 3</h3>
+                        <table>
+                            <tr>
+                                <td>Antwort</td>
+                                <td>Wir hätten in der Sekundarstufe ursprünglich ein Projekt zugewiesen bekommen, aber aufgrund eines Spezialfalles blieb mir die Projektarbeit verschont.</td>
+                            </tr>
+                        </table>
+
+                    </section>
+
+                </chapter>
+
+                <chapter>
+
+                    <h2>Gantt-Diagramm E-Portfolio</h2>
+
+                    <section>
+
+                        <h3>Aufgabe 1</h3>
+
+                        <table class="fullwidth">
+                            <tr>
+                                <td>Diagramm</td>
+                                <td><a href="../res/gantt.png" target="_blank"><img alt="Gantt-Diagramm" src="../res/gantt.png" id="gantt-img"></a></td>
+                            </tr>
+                        </table>
+
+                    </section>
+
+
+                    <section>
+
+                        <h3>Aufgabe 2</h3>
+                        <table class="fullwidth">
+                            <tr>
+                                <td>Antwort</td>
+                                <td>Da die Umsetzung der Aufgaben etwas spät erfolgte, musste ich die Planung nochmals anpassen an die aktuelle Situation. Ich erstellte die Planung mithilfe der Website <a href="https://teamgantt.com">TeamGantt</a>. Das Ergebnis fiel leider etwas zu simpel aus.</td>
+                            </tr>
+                        </table>
+
+
+                    </section>
+
+                </chapter>
+
+                <chapter>
+
+                    <h2>Projektrollen und deren Aufgaben, Kompetenzen und Verantwortlichkeiten </h2>
+
+                    <section>
+
+                        <h3>Aufgabe 1</h3>
+
+                        <table>
+                            <tr>
+                                <td>Rollen</td>
+                                <td>
+                                    <ul>
+                                        <li>Auftraggeber</li>
+                                        <li>Projektleiter</li>
+                                        <li>Projektmitarbeiter</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </section>
+
+
+                    <section>
+
+                        <h3>Aufgabe 2</h3>
+                        <table>
+                            <tr>
+                                <td>Rolle</td>
+                                <td>Auftraggeber</td>
+                            </tr>
+
+                            <tr>
+                                <td>Beschreibung</td>
+                                <td>Der Auftraggeber bestimmt die Rahmenbedingungen des Projekts und definiert die Ziele des Projekts.</td>
+                            </tr>
+
+                            <tr>
+                                <td>Aufgabe</td>
+                                <td>
+                                    <ul>
+                                        <li>Mit dem Projektleiter die Rahmenbedingungen besprechen</li>
+                                        <li>Die Wünsche des Unternehmens vertreten und dementsprechende Entscheidungen mit dem Projektleiter trefen</li>
+                                    </ul>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Kompetenz</td>
+                                <td>
+                                    <ul>
+                                        <li>Prioritäten und Wünsche des Unternehmens verstehen und durchsetzen</li>
+                                    </ul>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Verantwortung</td>
+                                <td>
+                                    <ul>
+                                        <li>Das Projekt beaufsichtigen und das Resultat dem Unternehmen vorstellen</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <br><br>
+
+                        <table>
+                            <tr>
+                                <td>Rolle</td>
+                                <td>Projektleiter</td>
+                            </tr>
+
+                            <tr>
+                                <td>Beschreibung</td>
+                                <td>Der Projektleiter ist für das Gelingen des Projekts zuständig. Er haftet für Sachen, welche schieflaufen und verteilt die Arbeitspakete an die Projektmitarbeiter.</td>
+                            </tr>
+
+                            <tr>
+                                <td>Aufgabe</td>
+                                <td>
+                                    <ul>
+                                        <li>Mit dem Auftragsgeber die Rahmenbedingungen besprechen</li>
+                                        <li>Diese Rahmenbedingungen an die Projektmitarbeiter weiterleiten</li>
+                                        <li>Die nötigen Informationen einholen</li>
+                                        <li>Für einen reibungslosen Projektablauf sorgen</li>
+                                        <li>Arbeitspakete zuweisen</li>
+                                    </ul>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Kompetenz</td>
+                                <td>
+                                    <ul>
+                                        <li>Prioritäten und Wünsche des Auftragsgeber verstehen und durchsetzen</li>
+                                        <li>Arbeitspakete erstellen und zuweisen</li>
+                                        <li>Sich informieren</li>
+                                    </ul>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Verantwortung</td>
+                                <td>
+                                    <ul>
+                                        <li>Verantwortlich für die Vollständigkeit und Funktionalität des Projekts</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <br><br>
+
+                        <table>
+                            <tr>
+                                <td>Rolle</td>
+                                <td>Projektmitarbeiter</td>
+                            </tr>
+
+                            <tr>
+                                <td>Beschreibung</td>
+                                <td>Der Projektmitarbeiter arbeitet an seinen zugewiesenen Arbeitspaketen.</td>
+                            </tr>
+
+                            <tr>
+                                <td>Aufgabe</td>
+                                <td>
+                                    <ul>
+                                        <li>Die verteilte Arbeit so gut und schnell wie möglich zu fertigstellen</li>
+                                    </ul>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Kompetenz</td>
+                                <td>
+                                    <ul>
+                                        <li>Instande zu sein, die Aufträge rechtzeitig fertig zu stellen</li>
+                                    </ul>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Verantwortung</td>
+                                <td>
+                                    <ul>
+                                        <li>Das Ergebnis der eigenen Arbeitspakete</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+
+
+                    </section>
+
+                </chapter>
+
+            </div>
+
+        </content>
+
+    </div>
 
 </body>
+
 </html>

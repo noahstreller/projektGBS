@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,28 +12,51 @@
 		function toggleActive() {
 			document.getElementById('grid').classList.toggle('active');
 			document.getElementById('link-container').classList.toggle('active');
+			document.getElementById('infos').classList.toggle('active');
+			document.getElementById('menu-icon').classList.toggle('active');
+			reset_animation();
+			document.getElementById('menu-icon').classList.toggle('inactive');
+		}
+
+		function reset_animation() {
+			var el = document.getElementById('menu-icon');
+			el.style.animation = 'none';
+			el.offsetHeight;
+			el.style.animation = null;
 		}
 	</script>
 </head>
+
 <body>
 
 	<div class="grid" id="grid">
 
 		<header>
-			<img src="../res/menu.png" onclick="toggleActive();" class="menu-icon">			
-			<h1>E-Portfolio Noah</h1>
+			<img onclick="toggleActive();" class="menu-icon active" id="menu-icon">
+			<h1>Planung</h1>
 		</header>
 
 		<nav>
-			
+
+			<div class="footer-or-something active" id="infos">
+
+				<span>2022-05-24</span>
+				<span>V 0.1.0</span>
+				<span>Noah Streller</span>
+				<span>Published</span>
+
+			</div>
+
+
 			<div class="link-container" id="link-container">
-				
+
 				<h2>Menu</h2>
 				<a href="../">Home</a>
 				<a href="../organisation">Organisation</a>
 				<a href="../projekt">Projekt</a>
 				<a href="../iperka">IPERKA</a>
 				<a href="../infobeschaffung">Informationsbeschaffung</a>
+				<a href="../planung">Planung</a>
 				<a href="../vortrag">Vortrag</a>
 
 			</div>
@@ -40,15 +64,134 @@
 		</nav>
 
 		<content>
-			
-			
 
+			<div class="scrollwrapper">
+
+				<chapter>
+
+					<h2>Eigene Planung</h2>
+
+					<section>
+
+						<h3>Aufgabe 1</h3>
+
+						<table class="fullwidth">
+							<tr>
+								<td>Antwort</td>
+								<td>Nein, ich sah es nie wirklich als eine Nötigkeit, den Tag zu planen. Vielleicht wird sich dies in Zukunft ändern, wenn mein Tagesplan auch etwas voller ist.</td>
+							</tr>
+
+							<tr>
+								<td>ALPEN-Methode</td>
+								<td><a href="../res/alpen.png" target="_blank"><img alt="Beispiel ALPEN-Methode" src="../res/alpen.png"></a></td>
+							</tr>
+
+							<tr>
+								<td>Egebnisse</td>
+								<td>Das Ganze lief eigentlich ziemlich gut nach Plan, da es nicht viele Elemente im Plan hatte. Ob es bei einem vollen Tagesplan genauso funktionieren würde, weiss ich nicht.</td>
+							</tr>
+						</table>
+
+					</section>
+
+
+					<section>
+
+						<h3>Aufgabe 2</h3>
+						<table>
+							<tr>
+								<td>Reflektion Tagesplanung</td>
+								<td>
+									<ul>
+										<li>Funktionierte gut mit ALPEN-Methode</li>
+										<li>Wirklich nötig war es allerdings auch nicht</li>
+										<li>Wie bereits erwähnt, ich denke dass es vielleicht nötig sein wird bei einem volleren Tagesplan</li>
+										<li>Ich benutze momentan keine Tools für meine Tagesorganisation. Den grössten Teil des Tages bin ich in der Schule oder bei der Arbeit, da brauche ich kein Tool für den Rest.</li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+
+
+					</section>
+
+				</chapter>
+
+				<chapter>
+
+					<h2>Reflexion Arbeitsplanung</h2>
+
+					<section>
+
+						<h3>Aufgabe 1</h3>
+
+						<table>
+							<tr>
+								<td>Antwort</td>
+								<td>Ich strukturiere Informationen gerne hierarchisch. Für verschiedene Informationen und Kategorien verwende ich gerne Überschriften, um die einzelnen Informationen zusammenzufassen. </td>
+							</tr>
+
+							<tr class="fullwidth">
+								<td>Beispiel</td>
+								<td><a target="_blank" href="../res/infostruktur.png"><img alt="Beispiel Informationsstruktur" src="../res/infostruktur.png"></a></td>
+							</tr>
+						</table>
+
+					</section>
+
+					<section>
+
+						<h3>Aufgabe 1</h3>
+
+						<table>
+							<tr>
+								<td>Gewähltes Tool</td>
+								<td>Google Keep</td>
+							</tr>
+
+							<tr>
+								<td>Vorteile</td>
+								<td>
+									<ul>
+										<li>Notizen</li>
+										<li>Reminders</li>
+										<li>To-Do Listen</li>
+										<li>Spracheingabe</li>
+										<li>Bilder einfügen</li>
+										<li>Von Hand zeichnen</li>
+										<li>Farben</li>
+										<li>Labels/Kategorien</li>
+										<li>Archiv</li>
+									</ul>
+								</td>
+							</tr>
+
+							<tr>
+								<td>Nachteile</td>
+								<td>
+									<ul>
+										<li>Unterstützt nur eine Unterordnung bei Listen</li>
+										<li>Kategorien werden in der Normalansicht nicht getrennt, sondern alle zusammengewürfelt</li>
+									</ul>
+								</td>
+							</tr>
+
+							<tr>
+								<td>Erfahrungen</td>
+								<td>Ich mag dieses Tool sehr, und ich benutze es häufig, um meine Notizen zu speichern. Die Sache mit der Unterordnung stört mich jedoch... Ich würde gerne strukturierte Listen erstellen mit mehr als bloss eine Stufe.</td>
+							</tr>
+						</table>
+
+					</section>
+
+				</chapter>
+
+			</div>
 
 		</content>
-
-				
 
 	</div>
 
 </body>
+
 </html>

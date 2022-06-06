@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,27 +12,51 @@
 		function toggleActive() {
 			document.getElementById('grid').classList.toggle('active');
 			document.getElementById('link-container').classList.toggle('active');
+			document.getElementById('infos').classList.toggle('active');
+			document.getElementById('menu-icon').classList.toggle('active');
+			reset_animation();
+			document.getElementById('menu-icon').classList.toggle('inactive');
+		}
+
+		function reset_animation() {
+			var el = document.getElementById('menu-icon');
+			el.style.animation = 'none';
+			el.offsetHeight;
+			el.style.animation = null;
 		}
 	</script>
 </head>
+
 <body>
 
 	<div class="grid" id="grid">
 
 		<header>
-			<img src="../res/menu.png" onclick="toggleActive();" class="menu-icon">			
-			<h1>E-Portfolio Noah</h1>
+			<img onclick="toggleActive();" class="menu-icon active" id="menu-icon">
+			<h1>Informations-<br>
+			beschaffung</h1>
 		</header>
 
 		<nav>
-			
+
+			<div class="footer-or-something active" id="infos">
+
+				<span>2022-05-24</span>
+				<span>V 0.1.0</span>
+				<span>Noah Streller</span>
+				<span>Published</span>
+
+			</div>
+
+
 			<div class="link-container" id="link-container">
-				
+
 				<h2>Menu</h2>
 				<a href="../">Home</a>
 				<a href="../organisation">Organisation</a>
 				<a href="../projekt">Projekt</a>
 				<a href="../iperka">IPERKA</a>
+				<a href="../infobeschaffung">Informationsbeschaffung</a>
 				<a href="../planung">Planung</a>
 				<a href="../vortrag">Vortrag</a>
 
@@ -40,15 +65,142 @@
 		</nav>
 
 		<content>
-			
-			
 
+			<div class="scrollwrapper">
+
+				<chapter>
+
+					<h2>Notizen machen</h2>
+
+					<section>
+
+						<h3>Aufgabe 1</h3>
+
+						<table class="fullwidth">
+							<tr>
+								<td>Beispiel Markdown</td>
+								<td><a target="_blank" href="../res/notizen-1.png"><img src="../res/notizen-1.png" id="notizen-img-1"></a></td>
+							</tr>
+
+							<tr>
+								<td>Beispiel OneNote</td>
+								<td><a target="_blank" href="../res/notizen-2.png"><img src="../res/notizen-2.png" id="notizen-img-2"></a></td>
+							</tr>
+						</table>
+
+					</section>
+
+
+					<section>
+
+						<h3>Aufgabe 2</h3>
+						<table>
+							<tr>
+								<td>Tipps für gute Notizen</td>
+								<td>
+									<ul>
+										<li>Sich mit dem Gehörten aktiv auseinandersetzen</li>
+										<li>Nicht alles mitschreiben, sondern versuchen, es in eigene Worte zu fassen</li>
+										<li>Textmarker verwenden, um Wichtiges hervorzuheben</li>
+										<li>Auf Papier statt auf dem Laptop Notizen machen (optional)</li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+
+
+					</section>
+
+
+					<section>
+
+						<h3>Aufgabe 3</h3>
+						<table>
+							<tr>
+								<td>Vergleich</td>
+								<td>Ich persönlich schreibe meine Notizen auf dem Laptop. Auch den Tip, nicht alles mitzuschreiben, habe ich lange nicht befolgt. Ich denke, ich sollte mir diese Tipps zu Herzen nehmen und tatsächlich verwenden.</td>
+							</tr>
+						</table>
+
+					</section>
+
+				</chapter>
+
+				<chapter>
+
+					<h2>Informationen strukturieren</h2>
+
+					<section>
+
+						<h3>Aufgabe 1</h3>
+
+						<table class="fullwidth">
+							<tr>
+								<td>Antwort</td>
+								<td>Ich strukturiere Informationen gerne hierarchisch. Für verschiedene Informationen und Kategorien verwende ich gerne Überschriften, um die einzelnen Informationen zusammenzufassen. </td>
+							</tr>
+
+							<tr class="fullwidth">
+								<td>Beispiel</td>
+								<td><a target="_blank" href="../res/infostruktur.png"><img alt="Beispiel Informationsstruktur" src="../res/infostruktur.png" id="infostruktur-img"></a></td>
+							</tr>
+						</table>
+
+					</section>
+
+					<section>
+
+						<h3>Aufgabe 1</h3>
+
+						<table>
+							<tr>
+								<td>Gewähltes Tool</td>
+								<td>Google Keep</td>
+							</tr>
+
+							<tr>
+								<td>Vorteile</td>
+								<td>
+									<ul>
+										<li>Notizen</li>
+										<li>Reminders</li>
+										<li>To-Do Listen</li>
+										<li>Spracheingabe</li>
+										<li>Bilder einfügen</li>
+										<li>Von Hand zeichnen</li>
+										<li>Farben</li>
+										<li>Labels/Kategorien</li>
+										<li>Archiv</li>
+									</ul>
+								</td>
+							</tr>
+
+							<tr>
+								<td>Nachteile</td>
+								<td>
+									<ul>
+										<li>Unterstützt nur eine Unterordnung bei Listen</li>
+										<li>Kategorien werden in der Normalansicht nicht getrennt, sondern alle zusammengewürfelt</li>
+									</ul>
+								</td>
+							</tr>
+
+							<tr>
+								<td>Erfahrungen</td>
+								<td>Ich mag dieses Tool sehr, und ich benutze es häufig, um meine Notizen zu speichern. Die Sache mit der Unterordnung stört mich jedoch... Ich würde gerne strukturierte Listen erstellen mit mehr als bloss eine Stufe.</td>
+							</tr>
+						</table>
+
+					</section>
+
+				</chapter>
+
+			</div>
 
 		</content>
-
-				
 
 	</div>
 
 </body>
+
 </html>
