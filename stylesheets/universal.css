@@ -283,13 +283,23 @@ chapter:last-child section:last-child {
 #gantt-img,
 #notizen-img-1,
 #notizen-img-2,
-#infostruktur-img
+#infostruktur-img,
+#alpen-img,
+#vorträge-iframe
 {
 
 	width: 90%;
 	cursor: pointer;
 
 }
+
+#vorträge-iframe {
+
+	height: 50vh;
+	width: 40vw;
+
+}
+
 
 ul * {
 	list-style-type: circle;

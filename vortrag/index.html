@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,22 +12,44 @@
 		function toggleActive() {
 			document.getElementById('grid').classList.toggle('active');
 			document.getElementById('link-container').classList.toggle('active');
+			document.getElementById('infos').classList.toggle('active');
+			document.getElementById('menu-icon').classList.toggle('active');
+			reset_animation();
+			document.getElementById('menu-icon').classList.toggle('inactive');
+		}
+
+		function reset_animation() {
+			var el = document.getElementById('menu-icon');
+			el.style.animation = 'none';
+			el.offsetHeight;
+			el.style.animation = null;
 		}
 	</script>
 </head>
+
 <body>
 
 	<div class="grid" id="grid">
 
 		<header>
-			<img src="../res/menu.png" onclick="toggleActive();" class="menu-icon">			
-			<h1>E-Portfolio Noah</h1>
+			<img onclick="toggleActive();" class="menu-icon active" id="menu-icon">
+			<h1>Vortrag</h1>
 		</header>
 
 		<nav>
-			
+
+			<div class="footer-or-something active" id="infos">
+
+				<span>2022-05-24</span>
+				<span>V 0.1.0</span>
+				<span>Noah Streller</span>
+				<span>Published</span>
+
+			</div>
+
+
 			<div class="link-container" id="link-container">
-				
+
 				<h2>Menu</h2>
 				<a href="../">Home</a>
 				<a href="../organisation">Organisation</a>
@@ -34,21 +57,109 @@
 				<a href="../iperka">IPERKA</a>
 				<a href="../infobeschaffung">Informationsbeschaffung</a>
 				<a href="../planung">Planung</a>
+				<a href="../vortrag">Vortrag</a>
 
 			</div>
 
 		</nav>
 
 		<content>
-			
-			
 
+			<div class="scrollwrapper">
+
+				<chapter>
+
+					<h2>Checkliste Präsentation</h2>
+
+					<section>
+
+						<h3>Aufgabe 1</h3>
+
+						<table>
+							<tr>
+								<td>Vorbereitung</td>
+								<td>
+									<ul>
+										<li>Interessen der Zuhörer berücksichtigen</li>
+										<li>Klare Ziele setzen</li>
+										<li>Medien abwechslungsreich und sinnvoll verwenden</li>
+										<li>Inhalt mithilfe von Bildern/Illustrationen visualisieren</li>
+									</ul>
+								</td>
+							</tr>
+
+							<tr>
+								<td>Durchführung</td>
+								<td>
+									<ul>
+										<li>Blickkontakt mit dem Publikum</li>
+										<li>Abwechslung einbauen</li>
+										<li>Spannend erzählen</li>
+										<li>Laut und deutlich sprechen</li>
+									</ul>
+								</td>
+							</tr>
+
+							<tr>
+								<td>Beendigung</td>
+								<td>
+									<ul>
+										<li>Sicher stellen, dass keine Fragen offen sind</li>
+										<li>Sich für die Aufmerksamkeit bedanken</li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+
+					</section>
+
+
+					<section>
+
+						<h3>Aufgabe 2</h3>
+						<table>
+							<tr>
+								<td>Antwort</td>
+								<td>Ich habe immer versucht, alle Punkte durchzusetzen. Dies gelingt aber nicht immer, da einige Themen (beispielsweise "Lernmethoden") sehr uninteressant sind und deswegen eine interessante, spannende Präsentation unmöglich ist. <br>
+								Auch Illustrationen finden kann sich als schwierig herausstellen, beispielsweise beim Unterthema "Übungen".</td>
+							</tr>
+						</table>
+
+
+					</section>
+
+
+					<section>
+
+						<h3>Aufgabe 3</h3>
+						<table>
+							<tr>
+								<td>Antwort</td>
+								<td>Ich denke, ich soll den Blickkontakt mit dem Publikum besser aufrechterhalten. Häufig erwische ich mich beim Spicken auf meiner PowerPoint-Folie. Meistens </td>
+							</tr>
+						</table>
+
+
+					</section>
+
+				</chapter>
+
+				<chapter>
+
+					<h2>Verschiedene Vorträge</h2>
+
+					<section>
+						<iframe id="vorträge-iframe" src="../res/raw/Vorträge.html"></iframe>
+					</section>
+
+				</chapter>
+
+			</div>
 
 		</content>
-
-				
 
 	</div>
 
 </body>
+
 </html>
