@@ -1,165 +1,376 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>E-Portfolio Noah</title>
-	<link rel="stylesheet" type="text/css" href="../stylesheets/universal.css">
-	<link rel="stylesheet" type="text/css" href="../stylesheets/index.css">
-
-	<script type="text/javascript">
-		function toggleActive() {
-			document.getElementById('grid').classList.toggle('active');
-			document.getElementById('link-container').classList.toggle('active');
-			document.getElementById('infos').classList.toggle('active');
-			document.getElementById('menu-icon').classList.toggle('active');
-			reset_animation();
-			document.getElementById('menu-icon').classList.toggle('inactive');
-		}
-
-		function reset_animation() {
-			var el = document.getElementById('menu-icon');
-			el.style.animation = 'none';
-			el.offsetHeight;
-			el.style.animation = null;
-		}
-	</script>
-</head>
-
-<body>
-
-	<div class="grid" id="grid">
-
-		<header>
-			<img onclick="toggleActive();" class="menu-icon active" id="menu-icon">
-			<h1>Vortrag</h1>
-		</header>
-
-		<nav>
-
-			<div class="footer-or-something active" id="infos">
-
-				<span>2022-05-24</span>
-				<span>V 0.1.0</span>
-				<span>Noah Streller</span>
-				<span>Published</span>
-
-			</div>
-
-
-			<div class="link-container" id="link-container">
-
-				<h2>Menu</h2>
-				<a href="../">Home</a>
-				<a href="../organisation">Organisation</a>
-				<a href="../projekt">Projekt</a>
-				<a href="../iperka">IPERKA</a>
-				<a href="../infobeschaffung">Informationsbeschaffung</a>
-				<a href="../planung">Planung</a>
-				<a href="../vortrag">Vortrag</a>
-
-			</div>
-
-		</nav>
-
-		<content>
-
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>E-Portfolio Noah</title>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/universal.css">
+		<script type="text/javascript">
+			function toggleActive() {
+				document.getElementById('grid').classList.toggle('active');
+				document.getElementById('link-container').classList.toggle('active');
+				document.getElementById('infos').classList.toggle('active');
+				document.getElementById('menu-icon').classList.toggle('active');
+				reset_animation();
+				document.getElementById('menu-icon').classList.toggle('inactive');
+			}
+			function reset_animation() {
+				var el = document.getElementById('menu-icon');
+				el.style.animation = 'none';
+				el.offsetHeight;
+				el.style.animation = null;
+			}
+		</script>
+	</head>
+	<body>
+		<div class="grid" id="grid">
+			<header>
+				<img onclick="toggleActive();" class="menu-icon active" id="menu-icon">
+				<h1>Vortrag</h1>
+			</header>
+			<nav>
+				<div class="footer-or-something active" id="infos">
+					<span>2022-06-06</span>
+					<span>V 1.0.1</span>
+					<span>Noah Streller</span>
+					<span>Published</span>
+				</div>
+				<div class="link-container" id="link-container">
+					<h2>Menu</h2>
+					<a href="../">Home</a>
+					<a href="../organisation">Organisation</a>
+					<a href="../projekt">Projekt</a>
+					<a href="../iperka">IPERKA</a>
+					<a href="../infobeschaffung">Informationsbeschaffung</a>
+					<a href="../planung">Planung</a>
+					<a href="../vortrag">Vortrag</a>
+				</div>
+			</nav>
+			<content>
 			<div class="scrollwrapper">
-
 				<chapter>
-
-					<h2>Checkliste Präsentation</h2>
-
-					<section>
-
-						<h3>Aufgabe 1</h3>
-
-						<table>
-							<tr>
-								<td>Vorbereitung</td>
-								<td>
-									<ul>
-										<li>Interessen der Zuhörer berücksichtigen</li>
-										<li>Klare Ziele setzen</li>
-										<li>Medien abwechslungsreich und sinnvoll verwenden</li>
-										<li>Inhalt mithilfe von Bildern/Illustrationen visualisieren</li>
-									</ul>
-								</td>
-							</tr>
-
-							<tr>
-								<td>Durchführung</td>
-								<td>
-									<ul>
-										<li>Blickkontakt mit dem Publikum</li>
-										<li>Abwechslung einbauen</li>
-										<li>Spannend erzählen</li>
-										<li>Laut und deutlich sprechen</li>
-									</ul>
-								</td>
-							</tr>
-
-							<tr>
-								<td>Beendigung</td>
-								<td>
-									<ul>
-										<li>Sicher stellen, dass keine Fragen offen sind</li>
-										<li>Sich für die Aufmerksamkeit bedanken</li>
-									</ul>
-								</td>
-							</tr>
-						</table>
-
-					</section>
-
-
-					<section>
-
-						<h3>Aufgabe 2</h3>
-						<table>
-							<tr>
-								<td>Antwort</td>
-								<td>Ich habe immer versucht, alle Punkte durchzusetzen. Dies gelingt aber nicht immer, da einige Themen (beispielsweise "Lernmethoden") sehr uninteressant sind und deswegen eine interessante, spannende Präsentation unmöglich ist. <br>
-								Auch Illustrationen finden kann sich als schwierig herausstellen, beispielsweise beim Unterthema "Übungen".</td>
-							</tr>
-						</table>
-
-
-					</section>
-
-
-					<section>
-
-						<h3>Aufgabe 3</h3>
-						<table>
-							<tr>
-								<td>Antwort</td>
-								<td>Ich denke, ich soll den Blickkontakt mit dem Publikum besser aufrechterhalten. Häufig erwische ich mich beim Spicken auf meiner PowerPoint-Folie. Meistens </td>
-							</tr>
-						</table>
-
-
-					</section>
-
+				<h2>Checkliste Präsentation</h2>
+				<section>
+					<h3>Aufgabe 1</h3>
+					<table>
+						<tr>
+							<td>Vorbereitung</td>
+							<td>
+								<ul>
+									<li>Interessen der Zuhörer berücksichtigen</li>
+									<li>Klare Ziele setzen</li>
+									<li>Medien abwechslungsreich und sinnvoll verwenden</li>
+									<li>Inhalt mithilfe von Bildern/Illustrationen visualisieren</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>Durchführung</td>
+							<td>
+								<ul>
+									<li>Blickkontakt mit dem Publikum</li>
+									<li>Abwechslung einbauen</li>
+									<li>Spannend erzählen</li>
+									<li>Laut und deutlich sprechen</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>Beendigung</td>
+							<td>
+								<ul>
+									<li>Sicher stellen, dass keine Fragen offen sind</li>
+									<li>Sich für die Aufmerksamkeit bedanken</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</section>
+				<section>
+					<h3>Aufgabe 2</h3>
+					<table>
+						<tr>
+							<td>Antwort</td>
+							<td>Ich habe immer versucht, alle Punkte durchzusetzen. Dies gelingt aber nicht immer, da einige Themen (beispielsweise "Lernmethoden") sehr uninteressant sind und deswegen eine interessante, spannende Präsentation unmöglich ist. <br>
+							Auch Illustrationen finden kann sich als schwierig herausstellen, beispielsweise beim Unterthema "Übungen".</td>
+						</tr>
+					</table>
+				</section>
+				<section>
+					<h3>Aufgabe 3</h3>
+					<table>
+						<tr>
+							<td>Antwort</td>
+							<td>Ich denke, ich soll den Blickkontakt mit dem Publikum besser aufrechterhalten. Häufig erwische ich mich beim Spicken auf meiner PowerPoint-Folie. Meistens sind auch meine Vorträge inhaltlich nicht sehr spanned vorgetragen geworden.</td>
+						</tr>
+					</table>
+				</section>
 				</chapter>
-
 				<chapter>
-
-					<h2>Verschiedene Vorträge</h2>
-
-					<section>
-						<iframe id="vorträge-iframe" src="../res/raw/Vorträge.html"></iframe>
-					</section>
-
+				<h2>Vorträge der Lernenden</h2>
+				<section>
+					<table>
+						<tr>
+							<td>Thema</td>
+							<td>Mindmap</td>
+						</tr>
+						<tr>
+							<td>Informationen</td>
+							<td>
+								<ul>
+									<li>Ist ein Baumdiagramm</li>
+									<li>Dient vor allem der visuellen Darstellung eines Themas</li>
+									<li>Hilft auch häufig für Brainstorming-Zwecke</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>Kann ich diese Technik selbst anwenden?</td>
+							<td>Ja</td>
+						</tr>
+						<tr>
+							<td>Habe ich diese Technik bereits angewendet?</td>
+							<td>Ja</td>
+						</tr>
+						<tr>
+							<td>Welche Erfahrungen machte ich mit dieser Technik?</td>
+							<td>Ich persönlich habe ein Mindmap nie als nötig empfunden, und verwende es daher sehr selten. Es ist mehr eine Zeitverschwendung als eine Zeiteinsparung.</td>
+						</tr>
+						<tr>
+							<td>Werde ich es wieder anwenden, und in welchen Situationen?</td>
+							<td>Nicht freiwillig, und nur für Skizzen für einen schnellen Überblick eines Themas</td>
+						</tr>
+					</table>
+				</section>
+				<section>
+					<table>
+						<tr>
+							<td>Thema</td>
+							<td>5W-Methode</td>
+						</tr>
+						<tr>
+							<td>Informationen</td>
+							<td>
+								<ul>
+									<li>Man fragt sich bei einem Problem fünf mal, warum etwas geschehen ist</li>
+									<li>Damit kann man oft die Ursache herausfinden</li>
+									<li>Erfunden von Toyoda Sakichi</li>
+									<li>Beispiel:
+										<ul id="arrowmarkers">
+											<li>
+												Drucker funktioniert nicht
+												<ul>
+													<li>
+														Tinte leer
+														<ul>
+															<li>
+																Nicht aufgefüllt
+																<ul>
+																	<li>
+																		Nicht gekauft
+																		<ul>
+																			<li>
+																				Nicht gemeldet, dass die Tinte leer ist
+																				<ul>
+																					<li>Lehrling zu faul</li>
+																				</ul>
+																			</li>
+																		</ul>
+																	</li>
+																</ul>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li><br>
+									<li>Lösung: Lehrling entlassen</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>Kann ich diese Technik selbst anwenden?</td>
+							<td>Ja</td>
+						</tr>
+						<tr>
+							<td>Habe ich diese Technik bereits angewendet?</td>
+							<td>Ja</td>
+						</tr>
+						<tr>
+							<td>Welche Erfahrungen machte ich mit dieser Technik?</td>
+							<td>Diese Methode half mir oft, die Ursachen herauszufinden für ein Problem. Weniger in der Informatik, sondern mehr im Alltag.</td>
+						</tr>
+						<tr>
+							<td>Werde ich es wieder anwenden, und in welchen Situationen?</td>
+							<td>Ich werde diese Technik sehr wahrscheinlich unbewusst anwenden für eine Alltagssituation.</td>
+						</tr>
+					</table>
+				</section>
+				<section>
+					<table>
+						<tr>
+							<td>Thema</td>
+							<td>Speedreading</td>
+						</tr>
+						<tr>
+							<td>Informationen</td>
+							<td>
+								<ul>
+									<li>Eine Methode, um schneller lesen zu können</li>
+									<li>Anstatt dass man Wort für Wort liest, überfliegt man ganze Wortgruppen</li>
+									<li>Durch diese Methode kann man bis zu 1500 Wörter pro Minute lesen</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>Kann ich diese Technik selbst anwenden?</td>
+							<td>Nein</td>
+						</tr>
+						<tr>
+							<td>Habe ich diese Technik bereits angewendet?</td>
+							<td>Nein</td>
+						</tr>
+						<tr>
+							<td>Welche Erfahrungen machte ich mit dieser Technik?</td>
+							<td>Ich bin gar nicht in der Lage, diese Technik anzuwenden. </td>
+						</tr>
+						<tr>
+							<td>Werde ich es wieder anwenden, und in welchen Situationen?</td>
+							<td>Vielleicht möchte ich diese Methode eines Tages erlernen, allerdings bezweifle ich dies sehr.</td>
+						</tr>
+					</table>
+				</section>
+				<section>
+					<table>
+						<tr>
+							<td>Thema</td>
+							<td>Walt Disney-Methode</td>
+						</tr>
+						<tr>
+							<td>Informationen</td>
+							<td>
+								<ul>
+									<li>Erfunden von Robert B. Dilts</li>
+									<li>Der Zweck ist für kreative Ideensammlungen</li>
+									<li>Drei Phasen:
+										<ol>
+											<li>Träumer (Alle Ideen aufschreiben, Realisierbarkeit unwichtig)</li>
+											<li>Realist (Verarbeitet realistisch umsetzbare Ideen des Träumers)</li>
+											<li>Kritiker (Analysiert Schwächen der Ideen des Realists)</li>
+										</ol>
+									</li><br>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>Kann ich diese Technik selbst anwenden?</td>
+							<td>Ja</td>
+						</tr>
+						<tr>
+							<td>Habe ich diese Technik bereits angewendet?</td>
+							<td>Nein</td>
+						</tr>
+						<tr>
+							<td>Welche Erfahrungen machte ich mit dieser Technik?</td>
+							<td>Ich habe diese Technik nie angewendet. </td>
+						</tr>
+						<tr>
+							<td>Werde ich es wieder anwenden, und in welchen Situationen?</td>
+							<td>Diese Methode könnte mir tatsächlich helfen, um Ideen für beispielsweise eine Softwareanwendung zu finden.</td>
+						</tr>
+					</table>
+				</section>
+				<section>
+					<table>
+						<tr>
+							<td>Thema</td>
+							<td>SMARTE Ziele</td>
+						</tr>
+						<tr>
+							<td>Informationen</td>
+							<td>
+								<ul>
+									<li>System zur Erstellung von erfolgreichen Zielen</li>
+									<li>1981 erfunden von George T. Doran</li>
+									<li><b>SMART</b> ist ein Acronym:
+										<ul><br>
+											<li><b>S</b>pecific
+												<ul><li>Was genau soll erreicht werden?</li></ul>
+											</li><br>
+											<li><b>M</b>easurable
+												<ul><li>Ist es überprüfbar?</li></ul>
+											</li><br>
+											<li><b>A</b>chievable
+												<ul><li>Ist es umsetzbar?</li></ul>
+											</li><br>
+											<li><b>R</b>elevant
+												<ul><li>Ist es sinnvoll?</li></ul>
+											</li><br>
+											<li><b>T</b>ime-bound
+												<ul><li>Zieldatum und Prioritäten festgelegt?</li></ul>
+											</li><br>
+										</ul>
+									</li><br>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>Kann ich diese Technik selbst anwenden?</td>
+							<td>Ja</td>
+						</tr>
+						<tr>
+							<td>Habe ich diese Technik bereits angewendet?</td>
+							<td>Nein</td>
+						</tr>
+						<tr>
+							<td>Welche Erfahrungen machte ich mit dieser Technik?</td>
+							<td>Ich habe diese Technik nie angewendet.</td>
+						</tr>
+						<tr>
+							<td>Werde ich es wieder anwenden, und in welchen Situationen?</td>
+							<td>Ich denke nicht, dass ich für jedes einzelne Ziel, welches ich mir setze, all diese Fragen stellen werde.</td>
+						</tr>
+					</table>
+				</section>
+				<section>
+					<table>
+						<tr>
+							<td>Thema</td>
+							<td>Brainwriting 6-3-5</td>
+						</tr>
+						<tr>
+							<td>Informationen</td>
+							<td>
+								<ul>
+									<li>Brainwriting ist dasselbe wie Brainstorming, nur schreibt jeder seine Ideen für sich auf, anstatt die Ideen von Beginn an mit allen zu teilen.</li>
+									<li>6 Teilnehmer setzen sich zusammen, um ein Brainwriting durchzuführen</li>
+									<li>Jeder Teilnehmer schreibt sich 3 Ideen pro Runde auf</li>
+									<li>Dies wiederholt man 5 Runden</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>Kann ich diese Technik selbst anwenden?</td>
+							<td>Ja</td>
+						</tr>
+						<tr>
+							<td>Habe ich diese Technik bereits angewendet?</td>
+							<td>Nein</td>
+						</tr>
+						<tr>
+							<td>Welche Erfahrungen machte ich mit dieser Technik?</td>
+							<td>Ich habe diese Technik nie angewendet.</td>
+						</tr>
+						<tr>
+							<td>Werde ich es wieder anwenden, und in welchen Situationen?</td>
+							<td>Ich finde, das herkömmliche Brainstorming ist besser, da ich unter Zeitdruck kaum eine Idee finden werde.</td>
+						</tr>
+					</table>
+				</section>
 				</chapter>
-
 			</div>
-
-		</content>
-
-	</div>
-
-</body>
-
+			</content>
+		</div>
+	</body>
 </html>

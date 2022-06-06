@@ -1,76 +1,137 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>E-Portfolio Noah</title>
-	<link rel="stylesheet" type="text/css" href="./stylesheets/universal.css">
-	<link rel="stylesheet" type="text/css" href="./stylesheets/index.css">
-
-	<script type="text/javascript">
-		function toggleActive() {
-			document.getElementById('grid').classList.toggle('active');
-			document.getElementById('link-container').classList.toggle('active');
-			document.getElementById('infos').classList.toggle('active');
-			document.getElementById('menu-icon').classList.toggle('active');
-			reset_animation();
-			document.getElementById('menu-icon').classList.toggle('inactive');
-		}
-
-		function reset_animation() {
-		 	var el = document.getElementById('menu-icon');
-		 	el.style.animation = 'none';
-		 	el.offsetHeight;
-		 	el.style.animation = null; 
-		}
-	</script>
-</head>
-<body>
-
-	<div class="grid" id="grid">
-
-		<header>
-			<img onclick="toggleActive();" class="menu-icon active" id="menu-icon">
-			<h1>E-Portfolio Noah</h1>
-		</header>
-
-		<nav>
-
-			<div class="footer-or-something active" id="infos">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>E-Portfolio Noah</title>
+		<link rel="stylesheet" type="text/css" href="./stylesheets/universal.css">
+		<script type="text/javascript">
+			function toggleActive() {
+				document.getElementById('grid').classList.toggle('active');
+				document.getElementById('link-container').classList.toggle('active');
+				document.getElementById('infos').classList.toggle('active');
+				document.getElementById('menu-icon').classList.toggle('active');
+				reset_animation();
+				document.getElementById('menu-icon').classList.toggle('inactive');
+			}
+			function reset_animation() {
+				var el = document.getElementById('menu-icon');
+				el.style.animation = 'none';
+				el.offsetHeight;
+				el.style.animation = null;
+			}
+		</script>
+	</head>
+	<body>
+		<div class="grid" id="grid">
+			<header>
+				<img onclick="toggleActive();" class="menu-icon active" id="menu-icon">
+				<h1>E-Portfolio Noah</h1>
+			</header>
+			<nav>
+				<div class="footer-or-something active" id="infos">
+					<span>2022-06-06</span>
+					<span>V 1.0.1</span>
+					<span>Noah Streller</span>
+					<span>Published</span>
+				</div>
+				<div class="link-container" id="link-container">
+					<h2>Menu</h2>
+					<a href="./">Home</a>
+					<a href="./organisation">Organisation</a>
+					<a href="./projekt">Projekt</a>
+					<a href="./iperka">IPERKA</a>
+					<a href="./infobeschaffung">Informationsbeschaffung</a>
+					<a href="./planung">Planung</a>
+					<a href="./vortrag">Vortrag</a>
+				</div>
+			</nav>
+			<content>
+			<div class="scrollwrapper">
+				<chapter>
+				<h2>Willkommen bei Noah Strellers E-Portfolio.</h2>
+				<!-- <a name="xyz" funktioniert leider nicht aufgrund der methode für das design. müsste gefixt werden -->
+				<section class="toc">
+					<h3>Inhaltsverzeichnis</h3>
+					<ul id="arrowmarkers">
+						<li>
+							<a href="./organisation">Organisation</a>
+							<ul>
+								<li><a href="./organisation">Aufgaben und Aufträge in Ihrem Lehrbetrieb</a></li>
+								<li><a href="./organisation#:~:text=Unterscheidung">Unterscheidung Aufbau- und Ablauforganisation</a></li>
+								<li><a href="./organisation#:~:text=Projektantrag">Projektantrag</a></li>
+							</ul>
+						</li>
+						<br>
+						<li>
+							<a href="./projekt">Projekt</a>
+							<ul>
+								<li><a href="./projekt">Phasenablauf IT-Projekt</a></li>
+								<li><a href="./projekt#:~:text=Gantt">Gantt-Diagramm E-Portfolio</a></li>
+								<li><a href="./projekt#:~:text=Projektrollen">Projektrollen und deren Aufgaben, Kompetenzen und Verantwortlichkeiten</a></li>
+							</ul>
+						</li>
+						<br>
+						<li>
+							<a href="./iperka">IPERKA</a>
+							<ul>
+								<li><a href="./iperka">IPERKA im Detail</a></li>
+								<li><a href="./iperka#:~:text=Praxisbeispiel">Praxisbeispiel</a></li>
+							</ul>
+						</li>
+						<br>
+						<li>
+							<a href="./infobeschaffung">Informationsbeschaffung</a>
+							<ul>
+								<li><a href="./infobeschaffung">Notizen machen</a></li>
+								<li><a href="./infobeschaffung#:~:text=Informationen%20strukturieren">Informationen strukturieren</a></li>
+							</ul>
+						</li>
+						<br>
+						<li>
+							<a href="./planung">Planung</a>
+							<ul>
+								<li><a href="./planung">Eigene Planung</a></li>
+								<li><a href="./planung#:~:text=Reflexion%20Arbeitsplanung">Reflexion Arbeitsplanung</a></li>
+							</ul>
+						</li>
+						<br>
+						<li>
+							<a href="./vortrag">Vortrag</a>
+							<ul>
+								<li><a href="./vortrag">Checkliste Präsentation</a></li>
+								<li><a href="./vortrag#:~:text=Vorträge%20der%20Lernenden">Vorträge der Lernenden</a></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="toc">
+					
+					<h3>Bilderverzeichnis</h3>
+					<table rules="all" class="fullwidth">
+						<tr>
+							<td><a target="_blank" href="./res/aufbauorg.png"><img src="./res/aufbauorg.png"></a></td>
+							<td><a target="_blank" href="./res/ablauforg.png"><img src="./res/ablauforg.png"></a></td>
+						</tr>
+						<tr>
+							<td><a target="_blank" href="./res/projektantrag.png"><img src="./res/projektantrag.png"></a></td>
+							<td><a target="_blank" href="./res/gantt.png"><img src="./res/gantt.png"></a></td>
+						</tr>
+						<tr>
+							<td><a target="_blank" href="./res/notizen-1.png"><img src="./res/notizen-1.png"></a></td>
+							<td><a target="_blank" href="./res/notizen-2.png"><img src="./res/notizen-2.png"></a></td>
+						</tr>
+						<tr>
+							<td><a target="_blank" href="./res/infostruktur.png"><img src="./res/infostruktur.png"></a></td>
+							<td><a target="_blank" href="./res/alpen.png"><img src="./res/alpen.png"></a></td>
+						</tr>
+						
+					</table>
+				</section>
 				
-				<span>2022-05-24</span>
-				<span>V 0.1.0</span>
-				<span>Noah Streller</span>
-				<span>Published</span>
-
+				</chapter>
 			</div>
-
-			
-			<div class="link-container" id="link-container">
-				
-				<h2>Menu</h2>
-				<a href="../">Home</a>
-				<a href="./organisation">Organisation</a>
-				<a href="./projekt">Projekt</a>
-				<a href="./iperka">IPERKA</a>
-				<a href="./infobeschaffung">Informationsbeschaffung</a>
-				<a href="./planung">Planung</a>
-				<a href="./vortrag">Vortrag</a>
-
-			</div>
-
-		</nav>
-
-		<content>
-			
-			
-
-
-		</content>
-
-				
-
-	</div>
-
-</body>
+			</content>
+		</div>
+	</body>
 </html>

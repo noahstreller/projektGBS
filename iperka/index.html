@@ -1,205 +1,149 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>E-Portfolio Noah</title>
-    <link rel="stylesheet" type="text/css" href="../stylesheets/universal.css">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/index.css">
-
-    <script type="text/javascript">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>E-Portfolio Noah</title>
+        <link rel="stylesheet" type="text/css" href="../stylesheets/universal.css">
+        <script type="text/javascript">
         function toggleActive() {
-            document.getElementById('grid').classList.toggle('active');
-            document.getElementById('link-container').classList.toggle('active');
-            document.getElementById('infos').classList.toggle('active');
-            document.getElementById('menu-icon').classList.toggle('active');
-            reset_animation();
-            document.getElementById('menu-icon').classList.toggle('inactive');
+        document.getElementById('grid').classList.toggle('active');
+        document.getElementById('link-container').classList.toggle('active');
+        document.getElementById('infos').classList.toggle('active');
+        document.getElementById('menu-icon').classList.toggle('active');
+        reset_animation();
+        document.getElementById('menu-icon').classList.toggle('inactive');
         }
-
         function reset_animation() {
-            var el = document.getElementById('menu-icon');
-            el.style.animation = 'none';
-            el.offsetHeight;
-            el.style.animation = null;
+        var el = document.getElementById('menu-icon');
+        el.style.animation = 'none';
+        el.offsetHeight;
+        el.style.animation = null;
         }
-    </script>
-</head>
-
-<body>
-
-    <div class="grid" id="grid">
-
-        <header>
-            <img onclick="toggleActive();" class="menu-icon active" id="menu-icon">
-            <h1>IPERKA</h1>
-        </header>
-
-        <nav>
-
-            <div class="footer-or-something active" id="infos">
-
-                <span>2022-05-24</span>
-                <span>V 0.1.0</span>
-                <span>Noah Streller</span>
-                <span>Published</span>
-
-            </div>
-
-
-            <div class="link-container" id="link-container">
-
-                <h2>Menu</h2>
-                <a href="../">Home</a>
-                <a href="../organisation">Organisation</a>
-                <a href="../projekt">Projekt</a>
-                <a href="../iperka">IPERKA</a>
-                <a href="../infobeschaffung">Informationsbeschaffung</a>
-                <a href="../planung">Planung</a>
-                <a href="../vortrag">Vortrag</a>
-
-            </div>
-
-        </nav>
-
-        <content>
-
+        </script>
+    </head>
+    <body>
+        <div class="grid" id="grid">
+            <header>
+                <img onclick="toggleActive();" class="menu-icon active" id="menu-icon">
+                <h1>IPERKA</h1>
+            </header>
+            <nav>
+                <div class="footer-or-something active" id="infos">
+                    <span>2022-06-06</span>
+                    <span>V 1.0.1</span>
+                    <span>Noah Streller</span>
+                    <span>Published</span>
+                </div>
+                <div class="link-container" id="link-container">
+                    <h2>Menu</h2>
+                    <a href="../">Home</a>
+                    <a href="../organisation">Organisation</a>
+                    <a href="../projekt">Projekt</a>
+                    <a href="../iperka">IPERKA</a>
+                    <a href="../infobeschaffung">Informationsbeschaffung</a>
+                    <a href="../planung">Planung</a>
+                    <a href="../vortrag">Vortrag</a>
+                </div>
+            </nav>
+            <content>
             <div class="scrollwrapper">
-
                 <chapter>
-
-                    <h2>IPERKA im Detail</h2>
-
-                    <section>
-
-                        <h3>Aufgabe 1</h3>
-
-                        <table>
-                            <tr>
-                                <td>Zugewiesener Schritt</td>
-                                <td>Auswerten</td>
-                            </tr>
-                        </table>
-
-                    </section>
-
-
-                    <section>
-
-                        <h3>Aufgabe 2</h3>
-                        <table>
-                            <tr>
-                            	<td>Wichtige Fragen</td>
-                            	<td>
-                            		<ul>
-                            			<li>Was kann man verbessern?</li>
-                            			<li>Was ist gelungen, kann man wiederholen?</li>
-                            			<li>Haben wir das Ziel erreicht?</li>
-                            			<li>Haben wir die Ressourcen effizient eingesetzt?</li>
-                            			<li>Haben wir das Budget und das Zeitlimit eingehalten?</li>
-                            		</ul>
-                            	</td>
-                            </tr>
-
-                            <tr>
-                            	<td>Sinnvolle Teilschritte</td>
-                            	<td>Die gewonnenen Erkenntnisse notieren, um sie beim nächsten Projekt zur Hand haben.</td>
-                            </tr>
-                        </table>
-
-
-                    </section>
-
-
-                    <section class="fullwidth">
-
-                        <h3>Aufgabe 5</h3>
-                        <table class="fullwidth border-below">
-                            <tr>
-                                <td>Phase</td>
-                                <td>Praktisches Beispiel zur Phase</td>
-                                <td>Erkenntnisse / Erfahrungen</td>
-                            </tr>
-
-                            <tr>
-                                <td>Informieren</td>
-                                <td>Mit dem Auftragsgeber die Ziele besprechen</td>
-                                <td>Ein einzelnes Gespräch mit dem Auftragsgeber wird nie reichen.</td>
-                            </tr>
-
-                            <tr>
-                                <td>Planen</td>
-                                <td>Die Arbeitspakete erstellen und verteilen</td>
-                                <td>Das Planen sollte nicht zu kurz kommen.</td>
-                            </tr>
-
-                            <tr>
-                                <td>Entscheiden</td>
-                                <td>Entscheidung zwischen verschiedener Frameworks</td>
-                                <td>Benötigt in der Regel nicht allzuviel Zeit.</td>
-                            </tr>
-
-                            <tr>
-                                <td>Realisieren</td>
-                                <td>Das Programm entwickeln</td>
-                                <td>Dies wird die meiste Zeit in Anspruch nehmen. Man sollte auf eine gute Übersicht achten.</td>
-                            </tr>
-
-                            <tr>
-                                <td>Kontrollieren</td>
-                                <td>Das Programm testen</td>
-                                <td>Falls beim Kontrollieren ein Fehler gefunden wird, kommt wieder das Realisieren an die Reihe.</td>
-                            </tr>
-
-                            <tr>
-                                <td>Auswerten</td>
-                                <td>Sich über das Projekt, die Ergebnisse und die Arbeit Gedanken machen</td>
-                                <td>Den Code eines alten Projekts <b>NIE</b> löschen, denn man <i>wird</i> es eines Tages brauchen.</td>
-                            </tr>
-                        </table>
-
-                    </section>
-
-                    <section>
-
-                        <h3>Aufgabe 6</h3>
-
-                        <table>
-                            <tr>
-                                <td>Antwort</td>
-                                <td>Ich finde, ich habe das Auswerten häufig vernachlässigt. Auch in das Planen habe ich zu wenig Zeit investiert. Als Beispiel möchte ich genau dieses Projekt nennen (E-Portfolio). Dadurch benötigte ich mehr Zeit fürs Realisieren, als nötig.</td>
-                            </tr>
-                        </table>
-
-                    </section>
-
+                <h2>IPERKA im Detail</h2>
+                <section>
+                    <h3>Aufgabe 1</h3>
+                    <table>
+                        <tr>
+                            <td>Zugewiesener Schritt</td>
+                            <td>Auswerten</td>
+                        </tr>
+                    </table>
+                </section>
+                <section>
+                    <h3>Aufgabe 2</h3>
+                    <table>
+                        <tr>
+                            <td>Wichtige Fragen</td>
+                            <td>
+                                <ul>
+                                    <li>Was kann man verbessern?</li>
+                                    <li>Was ist gelungen, kann man wiederholen?</li>
+                                    <li>Haben wir das Ziel erreicht?</li>
+                                    <li>Haben wir die Ressourcen effizient eingesetzt?</li>
+                                    <li>Haben wir das Budget und das Zeitlimit eingehalten?</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sinnvolle Teilschritte</td>
+                            <td>Die gewonnenen Erkenntnisse notieren, um sie beim nächsten Projekt zur Hand haben.</td>
+                        </tr>
+                    </table>
+                </section>
+                <section class="fullwidth">
+                    <h3>Aufgabe 5</h3>
+                    <table class="fullwidth border-below">
+                        <tr>
+                            <td>Phase</td>
+                            <td>Praktisches Beispiel zur Phase</td>
+                            <td>Erkenntnisse / Erfahrungen</td>
+                        </tr>
+                        <tr>
+                            <td>Informieren</td>
+                            <td>Mit dem Auftragsgeber die Ziele besprechen</td>
+                            <td>Ein einzelnes Gespräch mit dem Auftragsgeber wird nie reichen.</td>
+                        </tr>
+                        <tr>
+                            <td>Planen</td>
+                            <td>Die Arbeitspakete erstellen und verteilen</td>
+                            <td>Das Planen sollte nicht zu kurz kommen.</td>
+                        </tr>
+                        <tr>
+                            <td>Entscheiden</td>
+                            <td>Entscheidung zwischen verschiedener Frameworks</td>
+                            <td>Benötigt in der Regel nicht allzuviel Zeit.</td>
+                        </tr>
+                        <tr>
+                            <td>Realisieren</td>
+                            <td>Das Programm entwickeln</td>
+                            <td>Dies wird die meiste Zeit in Anspruch nehmen. Man sollte auf eine gute Übersicht achten.</td>
+                        </tr>
+                        <tr>
+                            <td>Kontrollieren</td>
+                            <td>Das Programm testen</td>
+                            <td>Falls beim Kontrollieren ein Fehler gefunden wird, kommt wieder das Realisieren an die Reihe.</td>
+                        </tr>
+                        <tr>
+                            <td>Auswerten</td>
+                            <td>Sich über das Projekt, die Ergebnisse und die Arbeit Gedanken machen</td>
+                            <td>Den Code eines alten Projekts <b>NIE</b> löschen, denn man <i>wird</i> es eines Tages brauchen.</td>
+                        </tr>
+                    </table>
+                </section>
+                <section>
+                    <h3>Aufgabe 6</h3>
+                    <table>
+                        <tr>
+                            <td>Antwort</td>
+                            <td>Ich finde, ich habe das Auswerten häufig vernachlässigt. Auch in das Planen habe ich zu wenig Zeit investiert. Als Beispiel möchte ich genau dieses Projekt nennen (E-Portfolio). Dadurch benötigte ich mehr Zeit fürs Realisieren, als nötig.</td>
+                        </tr>
+                    </table>
+                </section>
                 </chapter>
-
                 <chapter>
-
-                    <h2>Praxisbeispiel</h2>
-
-                    <section>
-
-                        <table class="fullwidth">
-                            <tr>
-                                <td>Antwort</td>
-                                <td>Praktische Beispiele für eine Softwareanwendung findet man bei der <a href="#:~:text=Praktisches%20Beispiel%20zur%20Phase">Aufgabe 5</a> gelistet. <br>
-                                IPERKA hat mir persönlich bei vielen Projekt sehr geholfen.</td>
-                            </tr>
-                        </table>
-
-                    </section>
-
-                </chapter>
-
-            </div>
-
+                <h2>Praxisbeispiel</h2>
+                <section>
+                    <table class="fullwidth">
+                        <tr>
+                            <td>Antwort</td>
+                            <td>Praktische Beispiele für eine Softwareanwendung findet man bei der <a href="#:~:text=Praktisches%20Beispiel%20zur%20Phase">Aufgabe 5</a> gelistet. <br>
+                        IPERKA hat mir persönlich bei vielen Projekt sehr geholfen.</td>
+                    </tr>
+                </table>
+            </section>
+            </chapter>
+        </div>
         </content>
-
     </div>
-
 </body>
-
 </html>

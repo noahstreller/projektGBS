@@ -1,300 +1,223 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>E-Portfolio Noah</title>
-	<link rel="stylesheet" type="text/css" href="../stylesheets/universal.css">
-	<link rel="stylesheet" type="text/css" href="../stylesheets/index.css">
-
-	<script type="text/javascript">
-		function toggleActive() {
-			document.getElementById('grid').classList.toggle('active');
-			document.getElementById('link-container').classList.toggle('active');
-			document.getElementById('infos').classList.toggle('active');
-			document.getElementById('menu-icon').classList.toggle('active');
-			reset_animation();
-			document.getElementById('menu-icon').classList.toggle('inactive');
-		}
-
-		function reset_animation() {
-		 	var el = document.getElementById('menu-icon');
-		 	el.style.animation = 'none';
-		 	el.offsetHeight;
-		 	el.style.animation = null;
-		}
-	</script>
-</head>
-<body>
-
-	<div class="grid" id="grid">
-
-		<header>
-			<img onclick="toggleActive();" class="menu-icon active" id="menu-icon">
-			<h1>Organisation</h1>
-		</header>
-
-		<nav>
-
-			<div class="footer-or-something active" id="infos">
-
-				<span>2022-05-24</span>
-				<span>V 0.1.0</span>
-				<span>Noah Streller</span>
-				<span>Published</span>
-
-			</div>
-
-
-			<div class="link-container" id="link-container">
-
-				<h2>Menu</h2>
-				<a href="../">Home</a>
-				<a href="../organisation">Organisation</a>
-				<a href="../projekt">Projekt</a>
-				<a href="../iperka">IPERKA</a>
-				<a href="../infobeschaffung">Informationsbeschaffung</a>
-				<a href="../planung">Planung</a>
-				<a href="../vortrag">Vortrag</a>
-
-			</div>
-
-		</nav>
-
-		<content>
-
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>E-Portfolio Noah</title>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/universal.css">
+		<script type="text/javascript">
+			function toggleActive() {
+				document.getElementById('grid').classList.toggle('active');
+				document.getElementById('link-container').classList.toggle('active');
+				document.getElementById('infos').classList.toggle('active');
+				document.getElementById('menu-icon').classList.toggle('active');
+				reset_animation();
+				document.getElementById('menu-icon').classList.toggle('inactive');
+			}
+			function reset_animation() {
+				var el = document.getElementById('menu-icon');
+				el.style.animation = 'none';
+				el.offsetHeight;
+				el.style.animation = null;
+			}
+		</script>
+	</head>
+	<body>
+		<div class="grid" id="grid">
+			<header>
+				<img onclick="toggleActive();" class="menu-icon active" id="menu-icon">
+				<h1>Organisation</h1>
+			</header>
+			<nav>
+				<div class="footer-or-something active" id="infos">
+					<span>2022-06-06</span>
+					<span>V 1.0.1</span>
+					<span>Noah Streller</span>
+					<span>Published</span>
+				</div>
+				<div class="link-container" id="link-container">
+					<h2>Menu</h2>
+					<a href="../">Home</a>
+					<a href="../organisation">Organisation</a>
+					<a href="../projekt">Projekt</a>
+					<a href="../iperka">IPERKA</a>
+					<a href="../infobeschaffung">Informationsbeschaffung</a>
+					<a href="../planung">Planung</a>
+					<a href="../vortrag">Vortrag</a>
+				</div>
+			</nav>
+			<content>
 			<div class="scrollwrapper">
-
 				<chapter>
-
-					<h2>Aufgaben und Aufträge in Ihrem Lehrbetrieb</h2>
-
-					<section>
-
-						<h3>Aufgabe 1</h3>
-
-						<table>
-							<tr>
-								<td>Aufgabe</td>
-								<td>Ämtli und Lernjournal</td>
-							</tr>
-
-							<tr>
-								<td>Informationen</td>
-								<td>
-									<ul>
-										<li>Welches Ämtli wurde mir zugeteilt</li>
-										<li>Wo und wie muss ich welches Ämtli erledigen</li>
-										<li>Wer ist mein Ämtlipartner</li>
-									</ul>
-								</td>
-							</tr>
-
-							<tr>
-								<td>Sachmittel</td>
-								<td>
-									<ul>
-										<li>Intranet für die Informationen</li>
-										<li>Jeweilige Putzutensilien</li>
-										<li>Microsoft Word für das Schreiben des Lernjournals</li>
-									</ul>
-								</td>
-							</tr>
-
-							<tr>
-								<td>Beschreibung</td>
-								<td>Im Basislehrjahr hat jeder Lernende ein Ämtli. Dieses wechselt jede zweite Woche. Wir müssen auch jede Woche ein Lernjournal schreiben, und dieses auf der Lernplattform hochladen. Darin dokumentieren wir, welche Themen wir behandeln und wie es uns dabei geht; ob wir Schwierigkeiten haben, oder ob es uns leicht fällt beispielsweise.</td>
-							</tr>
-						</table>
-
-					</section>
-
-
-					<section>
-
-						<h3>Aufgabe 2</h3>
-						<table>
-							<tr>
-								<td>Auftrag</td>
-								<td>Website für die Raiffeisen Schweiz</td>
-							</tr>
-
-							<tr>
-								<td>Informationen</td>
-								<td>
-									<ul>
-										<li>Was sind die Anforderungen</li>
-										<li>Mit welchen Hilfsmittel sollte die Umsetzung geschehen</li>
-										<li>Wie sollte das Resultat aussehen</li>
-									</ul>
-								</td>
-							</tr>
-
-							<tr>
-								<td>Sachmittel</td>
-								<td>
-									<ul>
-										<li>Internet für Recherchen</li>
-										<li>Laptop, Server</li>
-										<li>Betreuer</li>
-										<li>Microsoft Teams für Meetings mit dem Auftragsgeber</li>
-									</ul>
-								</td>
-							</tr>
-
-							<tr>
-								<td>Beschreibung</td>
-								<td>Unser Auftrag ist es, eine Website zu erstellen, in welcher man Stagen (Ausbildungsplatz für Trainees) verwalten und beantragen kann. Für diesen Auftrag benötigen wir viel Kontakt mit dem Auftragsgeber, um es nach seinen Wünschen zu gestalten.</td>
-							</tr>
-						</table>
-
-
-					</section>
-
-
-					<section>
-
-						<h3>Aufgabe 3</h3>
-						<table>
-							<tr>
-								<td>Antwort</td>
-								<td>Mehr Aufträge</td>
-							</tr>
-
-							<tr>
-								<td>Beschreibung</td>
-								<td>Im Betrieb führen wir mehr Aufträge als Aufgaben aus, da jeder Auftrag einzigartig ist, und man muss auch einige Zeit dafür aufwenden.</td>
-							</tr>
-						</table>
-
-					</section>
-
+				<h2>Aufgaben und Aufträge in Ihrem Lehrbetrieb</h2>
+				<section>
+					<h3>Aufgabe 1</h3>
+					<table>
+						<tr>
+							<td>Aufgabe</td>
+							<td>Ämtli und Lernjournal</td>
+						</tr>
+						<tr>
+							<td>Informationen</td>
+							<td>
+								<ul>
+									<li>Welches Ämtli wurde mir zugeteilt</li>
+									<li>Wo und wie muss ich welches Ämtli erledigen</li>
+									<li>Wer ist mein Ämtlipartner</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>Sachmittel</td>
+							<td>
+								<ul>
+									<li>Intranet für die Informationen</li>
+									<li>Jeweilige Putzutensilien</li>
+									<li>Microsoft Word für das Schreiben des Lernjournals</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>Beschreibung</td>
+							<td>Im Basislehrjahr hat jeder Lernende ein Ämtli. Dieses wechselt jede zweite Woche. Wir müssen auch jede Woche ein Lernjournal schreiben, und dieses auf der Lernplattform hochladen. Darin dokumentieren wir, welche Themen wir behandeln und wie es uns dabei geht; ob wir Schwierigkeiten haben, oder ob es uns leicht fällt beispielsweise.</td>
+						</tr>
+					</table>
+				</section>
+				<section>
+					<h3>Aufgabe 2</h3>
+					<table>
+						<tr>
+							<td>Auftrag</td>
+							<td>Website für die Raiffeisen Schweiz</td>
+						</tr>
+						<tr>
+							<td>Informationen</td>
+							<td>
+								<ul>
+									<li>Was sind die Anforderungen</li>
+									<li>Mit welchen Hilfsmittel sollte die Umsetzung geschehen</li>
+									<li>Wie sollte das Resultat aussehen</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>Sachmittel</td>
+							<td>
+								<ul>
+									<li>Internet für Recherchen</li>
+									<li>Laptop, Server</li>
+									<li>Betreuer</li>
+									<li>Microsoft Teams für Meetings mit dem Auftragsgeber</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>Beschreibung</td>
+							<td>Unser Auftrag ist es, eine Website zu erstellen, in welcher man Stagen (Ausbildungsplatz für Trainees) verwalten und beantragen kann. Für diesen Auftrag benötigen wir viel Kontakt mit dem Auftragsgeber, um es nach seinen Wünschen zu gestalten.</td>
+						</tr>
+					</table>
+				</section>
+				<section>
+					<h3>Aufgabe 3</h3>
+					<table>
+						<tr>
+							<td>Antwort</td>
+							<td>Mehr Aufträge</td>
+						</tr>
+						<tr>
+							<td>Beschreibung</td>
+							<td>Im Betrieb führen wir mehr Aufträge als Aufgaben aus, da jeder Auftrag einzigartig ist, und man muss auch einige Zeit dafür aufwenden.</td>
+						</tr>
+					</table>
+				</section>
 				</chapter>
-
 				<chapter>
-
-					<h2>Unterscheidung Aufbau- und Ablauforganisation</h2>
-
-					<section>
-
-						<h3>Aufgabe 1</h3>
-
-						<table class="fullwidth">
-							<tr>
-								<td>Art</td>
-								<td>Aufbauorganisation</td>
-								<td>Ablauforganisation</td>
-							</tr>
-
-							<tr>
-								<td>Beschreibung</td>
-								<td>Die Aufbauorganisation bildet die Rahmenbedingungen für das Gesamtgerüst. Aufgaben der Aufbauorganisation sind beispielsweise die Aufgaben zu verteilen, oder Abteilungen zu bilden</td>
-								<td>Die Ablauforganisation verkettet die einzelnen Aufgaben und die zur Erfüllung nötigen Verrichtungen. Arbeitsvorgänge müssen geordnet ablaufen, um Bearbeitungszeiten und -kosten zu minimieren, Kapazitäten optimal einzusetzen und Arbeitsplätze "human" zu gestalten. </td>
-							</tr>
-
-							<tr>
-								<td>Grafik</td>
-								<td><img alt="Beispiel für Aufbauorganisation" id="imgorg1" src="../res/aufbauorg.png"></td>
-								<td><img alt="Beispiel für Ablauforganisation" id="imgorg1" src="../res/ablauforg.png"></td>
-							</tr>
-
-							<tr>
-								<td>Unterschied</td>
-								<td colspan="2">Die Aufbauorganisation bildet die statische Organisationsstruktur eines Unternehmens während die Ablauforganisation  dynamische  Arbeitsprozesse innerhalb der vorgegeben Struktur definiert.</td>
-							</tr>
-						</table>
-
-					</section>
-
-
-					<section>
-
-						<h3>Aufgabe 2</h3>
-						<table class="fullwidth">
-							<tr>
-								<td>Art</td>
-								<td>Aufbauorganisation</td>
-								<td>Ablauforganisation</td>
-							</tr>
-
-							<tr>
-								<td>Beispiel</td>
-								<td>Das Organigramm der Raiffeisen Schweiz bildet eine hierarchische Unternehmensstruktur mit den Kategorien, Fachbereichen, und Abteilungen.</td>
-								<td>Ein Diagramm, welches den Prozess einer Transaktion beschreibt, zeigt die nötigen Abläufe für einen Arbeitsprozess.</td>
-							</tr>
-						</table>
-
-
-					</section>
-
-
-					<section>
-
-						<h3>Aufgabe 3</h3>
-						<table>
-							<tr>
-								<td>Antwort</td>
-								<td>Je mehr Ebenen eine Aufbauorganisation hat, desto länger dauert ein Entscheid, welcher beispielsweise Abteilungsübergreifend ist, da die jeweiligen Mitarbeiter zu ihrem Vorgesetzten gehen müssen, um das Anliegen zu schildern. Danach muss der Vorgesetzte wiederum zu <i>seinem</i> Vorgesetzten gehen, um das Anliegen weiterzuleiten. Bei vielen Ebenen wird eine Entscheidung stark in die Länge gezogen.</td>
-							</tr>
-						</table>
-
-
-					</section>
-
+				<h2>Unterscheidung Aufbau- und Ablauforganisation</h2>
+				<section>
+					<h3>Aufgabe 1</h3>
+					<table class="fullwidth">
+						<tr>
+							<td>Art</td>
+							<td>Aufbauorganisation</td>
+							<td>Ablauforganisation</td>
+						</tr>
+						<tr>
+							<td>Beschreibung</td>
+							<td>Die Aufbauorganisation bildet die Rahmenbedingungen für das Gesamtgerüst. Aufgaben der Aufbauorganisation sind beispielsweise die Aufgaben zu verteilen, oder Abteilungen zu bilden</td>
+							<td>Die Ablauforganisation verkettet die einzelnen Aufgaben und die zur Erfüllung nötigen Verrichtungen. Arbeitsvorgänge müssen geordnet ablaufen, um Bearbeitungszeiten und -kosten zu minimieren, Kapazitäten optimal einzusetzen und Arbeitsplätze "human" zu gestalten. </td>
+						</tr>
+						<tr>
+							<td>Grafik</td>
+							<td><img alt="Beispiel für Aufbauorganisation" id="imgorg1" src="../res/aufbauorg.png"></td>
+							<td><img alt="Beispiel für Ablauforganisation" id="imgorg1" src="../res/ablauforg.png"></td>
+						</tr>
+						<tr>
+							<td>Unterschied</td>
+							<td colspan="2">Die Aufbauorganisation bildet die statische Organisationsstruktur eines Unternehmens während die Ablauforganisation  dynamische  Arbeitsprozesse innerhalb der vorgegeben Struktur definiert.</td>
+						</tr>
+					</table>
+				</section>
+				<section>
+					<h3>Aufgabe 2</h3>
+					<table class="fullwidth">
+						<tr>
+							<td>Art</td>
+							<td>Aufbauorganisation</td>
+							<td>Ablauforganisation</td>
+						</tr>
+						<tr>
+							<td>Beispiel</td>
+							<td>Das Organigramm der Raiffeisen Schweiz bildet eine hierarchische Unternehmensstruktur mit den Kategorien, Fachbereichen, und Abteilungen.</td>
+							<td>Ein Diagramm, welches den Prozess einer Transaktion beschreibt, zeigt die nötigen Abläufe für einen Arbeitsprozess.</td>
+						</tr>
+					</table>
+				</section>
+				<section>
+					<h3>Aufgabe 3</h3>
+					<table>
+						<tr>
+							<td>Antwort</td>
+							<td>Je mehr Ebenen eine Aufbauorganisation hat, desto länger dauert ein Entscheid, welcher beispielsweise Abteilungsübergreifend ist, da die jeweiligen Mitarbeiter zu ihrem Vorgesetzten gehen müssen, um das Anliegen zu schildern. Danach muss der Vorgesetzte wiederum zu <i>seinem</i> Vorgesetzten gehen, um das Anliegen weiterzuleiten. Bei vielen Ebenen wird eine Entscheidung stark in die Länge gezogen.</td>
+						</tr>
+					</table>
+				</section>
 				</chapter>
-
 				<chapter>
-
-					<h2>Projektantrag</h2>
-
-					<section>
-
-						<h3>Aufgabe 1</h3>
-
-						<table>
-							<tr>
-								<td>Ort</td>
-								<td>GBS St. Gallen</td>
-							</tr>
-
-							<tr>
-								<td>Situation</td>
-								<td>In der GBS nutzt jeder Lehrer unterschiedliche Lehrmittel, um den Schülern den Stoff näherzubringen. Als Beispiele von zwei Lehrern kann ich nennen: 
-									<ul>
-										<li>OneNote</li>
-										<li>Dossiers von GBSSG</li>
-										<li>Moodle</li>
-										<li>GitLab</li>
-										<li>Bücher</li>
-									</ul>
-									Dies macht alles sehr unübersichtlich, und man hat seine Notizen nie am selben Ort. Dadurch geht viel Zeit verloren, nur da wir das Lehrmittel wechseln müssen, die richtige Textstelle finden, und so weiter.
-								</td>
-							</tr>
-						</table>
-
-					</section>
-
-
-					<section>
-
-						<h3>Aufgabe 2</h3>
-						<table class="fullwidth">
-							<tr>
-								<td>Projektantrag</td>
-								<td><a href="../res/pdf/Projektantrag.pdf" target="_blank"><img alt="Beispiel für Projektantrag" src="../res/projektantrag.png" id="projektantrag-img"></a></td>
-							</tr>
-						</table>
-
-
-					</section>
-
+				<h2>Projektantrag</h2>
+				<section>
+					<h3>Aufgabe 1</h3>
+					<table>
+						<tr>
+							<td>Ort</td>
+							<td>GBS St. Gallen</td>
+						</tr>
+						<tr>
+							<td>Situation</td>
+							<td>In der GBS nutzt jeder Lehrer unterschiedliche Lehrmittel, um den Schülern den Stoff näherzubringen. Als Beispiele von zwei Lehrern kann ich nennen:
+								<ul>
+									<li>OneNote</li>
+									<li>Dossiers von GBSSG</li>
+									<li>Moodle</li>
+									<li>GitLab</li>
+									<li>Bücher</li>
+								</ul>
+								Dies macht alles sehr unübersichtlich, und man hat seine Notizen nie am selben Ort. Dadurch geht viel Zeit verloren, nur da wir das Lehrmittel wechseln müssen, die richtige Textstelle finden, und so weiter.
+							</td>
+						</tr>
+					</table>
+				</section>
+				<section>
+					<h3>Aufgabe 2</h3>
+					<table class="fullwidth">
+						<tr>
+							<td>Projektantrag</td>
+							<td><a href="../res/pdf/Projektantrag.pdf" target="_blank"><img alt="Beispiel für Projektantrag" src="../res/projektantrag.png" id="projektantrag-img"></a></td>
+						</tr>
+					</table>
+				</section>
 				</chapter>
-
 			</div>
-
-		</content>
-
-	</div>
-
-</body>
+			</content>
+		</div>
+	</body>
 </html>
